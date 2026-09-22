@@ -1,4 +1,5 @@
 import '../styles/Header.css';
+import withLogger from './withLogger';
 
 interface HeaderProps {
   onNewPostClick: () => void;
@@ -24,4 +25,4 @@ function Header({ onNewPostClick }: HeaderProps) {
   );
 }
 
-export default Header;
+export default withLogger(Header);
